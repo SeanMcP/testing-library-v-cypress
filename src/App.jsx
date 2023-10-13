@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <div id="App">
       <button data-testid="button" onClick={() => setCount((c) => c + 1)}>
         Increment
       </button>
@@ -15,7 +15,7 @@ function App() {
         {count && count % 5 === 0 ? "Buzz" : ""}
         {count && count % 7 === 0 ? "Bang" : ""}
       </span>
-    </>
+    </div>
   );
 }
 
